@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILLAR</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #b61d12;
+            color: #ffffff;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            color: #fff5f5;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .sidebar a:hover {
+            background-color: #e49e09;
+            color: #fff;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .hero-section {
+            background: url('Pillar.png') no-repeat center center/cover;
+            color: white;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+}
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .menu-section {
+            margin-top: 40px;
+        }
+
+        .menu-card {
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="text-center">PILLAR</h2>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="content">
+        <section id="home" class="hero-section">
+        </section>
+
+        <section id="featured" class="menu-section">
+            <h2 class="text-center my-4">Featured Dish</h2>
+            <div class="text-center">
+                <img src="https://i.pinimg.com/736x/e9/bc/7e/e9bc7e2bdada6dbb5d22565fd0e40da6.jpg" alt="Featured Dish" class="img-fluid rounded">
+                <h3 class="mt-3">Chef's Special - Lechon Kawali</h3>
+                <p class="text-muted">A succulent deep fried pork dish served with fresh vegetables and a tangy dipping sauce.</p>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2 class="text-center my-5">Our Menu</h2>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card menu-card">
+                        <img src="https://i.pinimg.com/736x/1f/d1/17/1fd11761ecdc5b1234fe4ff95db5870c.jpg" class="card-img-top" alt="Dish 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Lumpia Shanghai</h5>
+                            <p class="card-text">Golden and crispy spring rolls filled with a savory blend of seasoned meat and vegetables, served with a sweet and tangy dipping sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card menu-card">
+                        <img src="https://i.pinimg.com/736x/6f/10/9a/6f109aa857dd1ff476fbc9a465785517.jpg" class="card-img-top" alt="Dish 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Kare Kare</h5>
+                            <p class="card-text">A delightful twist on a Filipino classic: deep-fried crispy pork belly served with a rich peanut sauce and a side of bagoong (shrimp paste).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card menu-card">
+                        <img src="https://i.pinimg.com/736x/97/c8/75/97c8750bdaacf86c61b0db741ab31232.jpg" class="card-img-top" alt="Dish 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Chop Suey</h5>
+                            <p class="card-text">A colorful medley of stir-fried fresh vegetables and tender meat in a savory, light sauce, perfect for a wholesome and flavorful meal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Custom Menu Website | Call us at <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
